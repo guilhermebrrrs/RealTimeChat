@@ -10,6 +10,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 .main-container {
@@ -17,7 +18,7 @@ body {
   width: 60%;
   margin: auto;
   padding: 1%;
-  border: solid 1px lightgray;
+  border: solid 1px white;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -41,6 +42,10 @@ body {
   flex: 1;
   max-height: 10%;
   margin: 2%;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .icons {
@@ -80,31 +85,35 @@ img.socket-io {
   margin: 1.5% auto 1.5% auto;
 }
 
-.main-container-buttons {  
+.main-container-buttons {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .container-buttons {
+  width: 15%;
   display: flex;
   flex-direction: column;
   margin-left: auto;
 }
 
-.container-buttons span {
+.container-buttons .text {
   font-weight: bold;
+  text-align: right;
 }
 
 .container-buttons a {
   display: flex;
   align-items: center;
-  margin-top: 25%;
+  margin-top: 10%;
   text-decoration: none;
   transition: 400ms;
-  color: black;
+  color: gray;
   padding-right: 15%;
   padding: 5px;
+  border: solid 1px lightgray;
+  border-radius: 3px;
 }
 
 .container-buttons a span {
@@ -118,6 +127,7 @@ img.socket-io {
   background-color: rgb(105, 216, 41);
   font-weight: normal;
   color: white;
+  border-color: rgb(105, 216, 41);
 }
 
 @media screen and (min-width: 210px) {

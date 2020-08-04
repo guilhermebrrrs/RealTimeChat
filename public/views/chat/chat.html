@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Chat</h1>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" integrity="sha512-v8ng/uGxkge3d1IJuEo6dJP8JViyvms0cly9pnbfRxT6/31c3dRWxIiwGnMSWwZjHKOuY3EVmijs7k1jz/9bLA==" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="views/chat/style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="/chatentry" class="exit">Sair da Sala</a>
+
+    <div id="chat-container">
+      <div class="user-info">
+        <div class="user">Usuário: <span class="user-name"></span></div>
+        <div class="room">Sala: <span class="room-id"></span></div>
+      </div>
+
+      <div class="messages"></div>
+
+      <div class="chat-box">
+        <div class="message-box"><input name="message-box" type="text" placeholder="Digite uma Mensagem"></div>
+        <div class="send-button"><span class="material-icons"></span></div>
+      </div>
+    </div>
+
+    <script src="scripts/chat/chat.js"></script>
+  </body>
 </html>

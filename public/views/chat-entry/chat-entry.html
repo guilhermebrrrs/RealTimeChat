@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" integrity="sha512-v8ng/uGxkge3d1IJuEo6dJP8JViyvms0cly9pnbfRxT6/31c3dRWxIiwGnMSWwZjHKOuY3EVmijs7k1jz/9bLA==" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="views/chat-entry/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="chat-entry-main-container">
+    <div class="presentation">
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+
+    <div class="separator-main-container"></div>
+
+    <form id="chat-entry-form" action="/chat" method="GET">
+      <img src="views/chat-entry/icons/STSchat.gif" alt="">
+      <input type="text" placeholder="NOME DE USUÁRIO" name="username">
+      <div class="separator" placeholder=""></div>
+      <input type="text" placeholder="CÓDIGO DA SALA" name="roomid">
+      <a class="send-button">Entrar</a>
+    </form>
+  </div>
+
+  <script src="scripts/chat-entry/chatEntry.js"></script>
+  
+</body>
+</html>

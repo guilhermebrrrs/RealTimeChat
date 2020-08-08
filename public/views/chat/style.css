@@ -68,6 +68,7 @@ body {
   text-overflow: clip;
   overflow-y: scroll;
   font-family: 'Nunito', sans-serif;
+  padding-bottom: 10px;
 }
 
 .owner-message,
@@ -80,6 +81,7 @@ body {
   flex-direction: column;
   position: relative;
   color: whitesmoke;
+  text-overflow: clip;
 }
 
 .owner-message .user-message,
@@ -87,9 +89,9 @@ body {
   background-color: white;
   color: gray;
   padding: 0 5px;
-  text-overflow: clip;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  overflow-wrap: break-word;
 }
 
 .message-user-name {
@@ -130,10 +132,9 @@ body {
   align-items: center;
 }
 
-
 .message-box {
   height: 5vh;
-  width: 97%;
+  width: 95%;
   border-top: solid 1px lightgray;
   display: flex;
   box-sizing: border-box;
@@ -149,7 +150,7 @@ body {
 
 .send-button {
   height: 5vh;
-  width: 3%;
+  width: 5%;
   border-top: solid 1px lightgray;
   border-left: solid 1px lightgray;
   box-sizing: border-box;
@@ -158,18 +159,27 @@ body {
   align-items: center;
   cursor: pointer;
   user-select: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  color: gray;
   transition: 100ms;
 }
 
 .send-button:hover {
-  background-color: greenyellow;
+  background-color: rgb(105, 216, 41);
   color: white;
-  border-color: greenyellow;
+  border-color: rgb(105, 216, 41);
+  border: solid 3px green;
+  border-left-color: greenyellow;
+  border-top: 0;
+  border-bottom-right-radius: 6px;
+  text-shadow: 1px 1px 0px green;
 }
 
 .send-button:active {
-  background-color: cornflowerblue;
-  border-color: cornflowerblue;
+  background-color: rgb(105, 216, 41);
+  border-color: rgb(105, 216, 41);
+  border: 0;
 }
 
 .send-button .material-icons {
@@ -247,6 +257,18 @@ body {
 @media screen and (min-width: 1920px) {
   * {
     font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  * {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 3840px) {
+  * {
+    font-size: 25px;
   }
 }
 
